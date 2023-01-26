@@ -31,7 +31,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - run: mkdir download && cp target/*.jar download
     - name: actions/Upload a Build Artifact
-      uses: actions/Uplad-artifact@v2
+      uses: actions/Upload-artifact@v2
       with:
         name: Build
         path: download
